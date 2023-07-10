@@ -7,9 +7,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -19,19 +17,18 @@ public class Controller {
     public ImageView topLeftCell, topCenterCell, topRightCell, centerLeftCell, centerCenterCell, centerRightCell, bottomLeftCell, bottomCenterCell, bottomRightCell;
 
     private final Game                    game;
-    private final Set<ImageView>          occupied;
     private final Map<Integer, ImageView> pairs;
 
     public Controller() {
-        this.occupied = new HashSet<>();
         this.game = new Game();
         this.pairs = new HashMap<>();
     }
 
     /**
      * Processes the click and sets image
+     *
      * @param coordinates coordinates of the cell what was clicked
-     * @param imageView imageView which is located at these coordinates
+     * @param imageView   imageView which is located at these coordinates
      */
     private void pressTo(int coordinates, ImageView imageView) {
         game.move(coordinates);
@@ -56,10 +53,10 @@ public class Controller {
         Platform.runLater(() -> {
             ScheduledExecutorService executor = new ScheduledThreadPoolExecutor(10);
             executor.schedule(() -> {
-                for (ImageView imageView : occupied) {
+                for (ImageView imageView : pairs.values()) {
                     imageView.setImage(null);
                 }
-                occupied.clear();
+                pairs.clear();
                 game.restartGame();
             }, 2, TimeUnit.SECONDS);
         });
@@ -78,12 +75,12 @@ public class Controller {
 
     /**
      * Processes the first click
+     *
      * @param coordinates coordinates of the cell what was clicked
-     * @param field field which is located at these coordinates
+     * @param field       field which is located at these coordinates
      */
     private void firstPress(int coordinates, ImageView field) {
-        if (!occupied.contains(field)) {
-            occupied.add(field);
+        if (!pairs.containsValue(field)) {
             pairs.put(coordinates, field);
             pressTo(coordinates, field);
         }

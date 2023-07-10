@@ -19,6 +19,7 @@ public class Game {
 
     /**
      * Processes move
+     *
      * @param coordinates coordinates of move
      */
     public void move(int coordinates) {
@@ -46,6 +47,7 @@ public class Game {
 
     /**
      * Checks if game has finished
+     *
      * @return true if game is finished
      */
     public boolean isFinished() {
@@ -54,6 +56,7 @@ public class Game {
 
     /**
      * Determines whether the given sign has won
+     *
      * @param sign the checking sign
      * @return true if the given sign has won
      */
@@ -63,6 +66,7 @@ public class Game {
 
     /**
      * Checks if it won by diagonal
+     *
      * @param sign the checking sign
      */
     private boolean isDiagonal(int sign) {
@@ -82,6 +86,7 @@ public class Game {
 
     /**
      * Checks if it won by line
+     *
      * @param sign the checking sign
      */
     private boolean isLine(int sign) {
@@ -98,6 +103,7 @@ public class Game {
 
     /**
      * Checks if it won column
+     *
      * @param sign the checking sign
      */
     private boolean isColumn(int sign) {

@@ -13,17 +13,20 @@
         </Pane>
         <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onTopCenterPressed" prefHeight="130.0"
               prefWidth="130.0">
-            <ImageView fx:id="topCenterCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+            <ImageView fx:id="topCenterCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true"
+                       preserveRatio="true"/>
         </Pane>
         <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onTopRightPressed" prefHeight="130.0"
               prefWidth="130.0">
-            <ImageView fx:id="topRightCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+            <ImageView fx:id="topRightCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true"
+                       preserveRatio="true"/>
         </Pane>
     </HBox>
     <HBox alignment="CENTER" prefHeight="203.0" prefWidth="500.0">
         <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onCenterLeftPressed" prefHeight="130.0"
               prefWidth="130.0">
-            <ImageView fx:id="centerLeftCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+            <ImageView fx:id="centerLeftCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true"
+                       preserveRatio="true"/>
         </Pane>
         <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onCenterCenterPressed" prefHeight="130.0"
               prefWidth="130.0">
@@ -32,13 +35,15 @@
         </Pane>
         <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onCenterRightPressed" prefHeight="130.0"
               prefWidth="130.0">
-            <ImageView fx:id="centerRightCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+            <ImageView fx:id="centerRightCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true"
+                       preserveRatio="true"/>
         </Pane>
     </HBox>
     <HBox alignment="TOP_CENTER" prefHeight="255.0" prefWidth="500.0">
         <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onBottomLeftPressed" prefHeight="130.0"
               prefWidth="130.0">
-            <ImageView fx:id="bottomLeftCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+            <ImageView fx:id="bottomLeftCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true"
+                       preserveRatio="true"/>
         </Pane>
         <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onBottomCenterPressed" prefHeight="130.0"
               prefWidth="130.0">
@@ -47,7 +52,8 @@
         </Pane>
         <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onBottomRightPressed" prefHeight="130.0"
               prefWidth="130.0">
-            <ImageView fx:id="bottomRightCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+            <ImageView fx:id="bottomRightCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true"
+                       preserveRatio="true"/>
         </Pane>
     </HBox>
 </VBox>
