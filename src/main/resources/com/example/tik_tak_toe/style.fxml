@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<VBox id="main" fx:id="grid" alignment="CENTER" prefHeight="500" prefWidth="500"
+      style="-fx-background-image: url(&quot;file:///C:/Users/user/IdeaProjects/Tik%20Tak%20Toe/src/main/resources/tiles/grid.png&quot;);;"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.tik_tak_toe.Controller">
+    <HBox alignment="BOTTOM_CENTER" prefHeight="255.0" prefWidth="500.0">
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onTopLeftPressed" prefHeight="130.0"
+              prefWidth="130.0">
+            <ImageView fx:id="topLeftCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+        </Pane>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onTopCenterPressed" prefHeight="130.0"
+              prefWidth="130.0">
+            <ImageView fx:id="topCenterCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+        </Pane>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onTopRightPressed" prefHeight="130.0"
+              prefWidth="130.0">
+            <ImageView fx:id="topRightCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+        </Pane>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="203.0" prefWidth="500.0">
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onCenterLeftPressed" prefHeight="130.0"
+              prefWidth="130.0">
+            <ImageView fx:id="centerLeftCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+        </Pane>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onCenterCenterPressed" prefHeight="130.0"
+              prefWidth="130.0">
+            <ImageView fx:id="centerCenterCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true"
+                       preserveRatio="true"/>
+        </Pane>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onCenterRightPressed" prefHeight="130.0"
+              prefWidth="130.0">
+            <ImageView fx:id="centerRightCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+        </Pane>
+    </HBox>
+    <HBox alignment="TOP_CENTER" prefHeight="255.0" prefWidth="500.0">
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onBottomLeftPressed" prefHeight="130.0"
+              prefWidth="130.0">
+            <ImageView fx:id="bottomLeftCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+        </Pane>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onBottomCenterPressed" prefHeight="130.0"
+              prefWidth="130.0">
+            <ImageView fx:id="bottomCenterCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true"
+                       preserveRatio="true"/>
+        </Pane>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#onBottomRightPressed" prefHeight="130.0"
+              prefWidth="130.0">
+            <ImageView fx:id="bottomRightCell" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true"/>
+        </Pane>
+    </HBox>
+</VBox>
