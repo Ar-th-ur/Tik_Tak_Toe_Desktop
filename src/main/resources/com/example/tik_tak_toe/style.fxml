@@ -3,7 +3,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <VBox id="main" fx:id="grid" alignment="CENTER" prefHeight="500" prefWidth="500"
-      style="-fx-background-image: url(&quot;file:///C:/Users/user/IdeaProjects/Tik%20Tak%20Toe/src/main/resources/tiles/grid.png&quot;);;"
+      style="-fx-background-image: url(&quot;file:///C:/Users/user/Documents/GitHub/Tik_Tak_Toe_Desktop/src/main/resources/tiles/grid.png&quot;);"
       xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.example.tik_tak_toe.Controller">
     <HBox alignment="BOTTOM_CENTER" prefHeight="255.0" prefWidth="500.0">

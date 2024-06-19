@@ -8,7 +8,6 @@ import javafx.scene.layout.VBox;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
@@ -51,14 +50,15 @@ public class Controller {
      */
     private void restartGame() {
         Platform.runLater(() -> {
-            ScheduledExecutorService executor = new ScheduledThreadPoolExecutor(10);
+            var executor = new ScheduledThreadPoolExecutor(10);
             executor.schedule(() -> {
                 for (ImageView imageView : pairs.values()) {
                     imageView.setImage(null);
                 }
                 pairs.clear();
                 game.restartGame();
-            }, 2, TimeUnit.SECONDS);
+            }, 1, TimeUnit.SECONDS);
+            executor.shutdown();
         });
     }
 
